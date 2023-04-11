@@ -4,7 +4,7 @@ pipeline{
 		stage('1-Memory'){
 			steps{
 				sh 'du -h'
-				sh 'df -g'
+				sh 'free -g'
 			}
 		}
 		stage('2-Test'){
